@@ -33,5 +33,5 @@ magnolia = Restaurant.create([{
 # REVIEWS
 
 mag01 = Review.create([{
-    :status => "Before they sold out butcher selfies, meggings cardigan Tumblr roof party. PBR&B gentrify Godard, selvage pickled try-hard Odd Future aesthetic. "
+    :critique => "Before they sold out butcher selfies, meggings cardigan Tumblr roof party. PBR&B gentrify Godard, selvage pickled try-hard Odd Future aesthetic. "
     } ])
