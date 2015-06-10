@@ -1,9 +1,10 @@
-<% title "Hip Rest" %>
-
-<h1><%= yield(:title) %></h1>
-
+<div class="row">
 <% @restaurants.each do |restaurant| %>
-	<div>
-	<%= restaurant.name %>
-	</div>
-<% end %>
+  <div class="col-xs-6 col-md-3">
+    <a href="<%= link_to "Sign up", new_user_registration_path %>" class="thumbnail">
+        <%= restaurant.name %>
+        <img src="<%= restaurant.photo %>" alt="">
+    </a>
+  </div>
+ <% end %>
+</div>
