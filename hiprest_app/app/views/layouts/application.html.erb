@@ -7,18 +7,29 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
+	<div>
 
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+		<% if user_signed_in? %>
+			<%= current_user.email %>
+			<%= link_to "Sign out", destroy_user_session_path %>
+		<% else %>
+			<%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path %>
+		<% end %>
+		
+	</div>
+
+		<% if notice %>
+		  <p class="alert alert-success"><%= notice %></p>
+		<% end %>
+		<% if alert %>
+		  <p class="alert alert-danger"><%= alert %></p>
+		<% end %>
 
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>
