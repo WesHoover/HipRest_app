@@ -1,9 +1,8 @@
 <div class="row">
 <% @restaurants.each do |restaurant| %>
   <div class="col-xs-6 col-md-3">
-    <a href="<%= link_to "Sign up", new_user_registration_path %>" class="thumbnail">
         <%= restaurant.name %>
-        <img src="<%= restaurant.photo %>" alt="">
+        <a href="<%= user_session_path %>"><img src="<%= restaurant.photo %>"></a>
     </a>
   </div>
  <% end %>
