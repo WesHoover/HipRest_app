@@ -1,9 +1,15 @@
-<div class="row">
-<% @restaurants.each do |restaurant| %>
-  <div class="col-xs-6 col-md-3">
-        <%= restaurant.name %>
-        <a href="<%= user_session_path %>"><img src="<%= restaurant.photo %>"></a>
-    </a>
+<!-- START WELCOME BODY -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>HipRest</h1>
+    <p>trendy description here</p>
+    <p>AUSTIN</p>
   </div>
- <% end %>
 </div>
+
+<!-- YEILD WILL CONTAIN RESTAURANT LIST GRID -->
+<% @restaurants.each do |restaurant| %>
+    <div class="col-xs-4 col-md-4">
+        <a class="thumbnail" href="<%= user_session_path %>"><%= restaurant.name %><img src="<%= restaurant.photo %>"></a>
+    </div>
+<% end %>
