@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :restaurants
   resources :reviews
 
+  root to: 'restaurants#index'
+
 
   # get 'users/sign_up'
 
