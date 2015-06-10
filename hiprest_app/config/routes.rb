@@ -9,16 +9,13 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   resources :restaurants
   resources :reviews
+  #resources :users
 
   root to: 'welcome#index'
   
 
 
   # get 'users/sign_up'
-
-  #devise_scope :user do
-  #  get "sign_up", to: "users/sessions#new"
-  #end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
