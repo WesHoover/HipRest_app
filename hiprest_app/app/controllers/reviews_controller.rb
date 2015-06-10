@@ -13,8 +13,6 @@ class ReviewsController < ApplicationController
   def show
   end
 
-  before_action :authenticate_user!
-
   # GET /reviews/new
   def new
     @review = Review.new
