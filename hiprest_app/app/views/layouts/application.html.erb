@@ -10,16 +10,17 @@
 
 <body>
 
-	<%= link_to "Home", destroy_user_session_path %>
-
-	<div>
-
-		<% if user_signed_in? %>
-			<%= current_user.email %>
-			<%= link_to "Sign out", destroy_user_session_path %>
-		<% else %>
-			<%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path %>
-		<% end %>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li><%= link_to "Home", root_path %></li>
+			<% if user_signed_in? %>
+				<li><%= link_to current_user.email %></li> 
+				<li><%= link_to "Sign out", destroy_user_session_path %></li>
+			<% else %>
+				<li><%= link_to "Sign up", new_user_registration_path %></li>
+				<li><%= link_to "Sign in", user_session_path %></li>
+			<% end %>
+		</ul>
 		
 	</div>
 

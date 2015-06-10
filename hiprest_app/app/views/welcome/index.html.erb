@@ -1,0 +1,9 @@
+<% title "Hip Rest" %>
+
+<h1><%= yield(:title) %></h1>
+
+<% @restaurants.each do |restaurant| %>
+	<div>
+	<%= restaurant.name %>
+	</div>
+<% end %>
