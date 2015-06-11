@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20150609204424) do
   add_index "restaurants", ["user_id"], name: "index_restaurants_on_user_id", using: :btree
 
   create_table "reviews", force: :cascade do |t|
+    t.string   "title"
     t.text     "critique"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
