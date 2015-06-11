@@ -1,6 +1,11 @@
 <!-- RESTAURANT LIST GRID -->
 <% @restaurants.each do |restaurant| %>
-    <div class="col-xs-4 col-md-4">
-        <a class="thumbnail" href="<%= user_session_path %>"><%= restaurant.name %><img src="<%= restaurant.photo %>"></a>
-    </div>
+	<div class="col-xs-4 col-md-4">
+	    <% if user_signed_in? %>
+	    	<a class="thumbnail" href="<%= restaurant_reviews_path %>"><%= restaurant.name %><img src="<%= restaurant.photo %>"></a>
+	    	<% else %>
+	        <a class="thumbnail" href="<%= user_session_path %>"><%= restaurant.name %><img src="<%= restaurant.photo %>"></a>
+	    <% end %>
+	</div>
 <% end %>
+

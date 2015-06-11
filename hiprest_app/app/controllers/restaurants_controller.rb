@@ -1,6 +1,6 @@
 class RestaurantsController < ApplicationController
-  #before_action :authenticate_user!, :except => [:show, :index]
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :except => [:show, :index]
 
   # GET /restaurants
   # GET /restaurants.json
@@ -11,6 +11,8 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
+    @restaurant = Restaurant.find(params[:id])
+    @reviews = Review.where(restaurant_id: @restaurant.id).order("created_at DESC")
   end
 
   # GET /restaurants/new
