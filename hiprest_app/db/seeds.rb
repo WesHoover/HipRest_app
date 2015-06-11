@@ -9,27 +9,27 @@
 # USERS
 nathan = User.create([{
     :email => 'nathan@email.com',
-    :encrypted_password => 'mypassword' } ])
+    :encrypted_password => '$2a$10$IXBQx7nCgZOsN6iQgCe/tuPM9Op7ivHxyXscKyNr0G02TAjyF994S' } ])
 
 heidi = User.create([{
     :email => 'heidi@email.com',
-    :encrypted_password => 'mypassword' } ])
+    :encrypted_password => '$2a$10$IXBQx7nCgZOsN6iQgCe/tuPM9Op7ivHxyXscKyNr0G02TAjyF994S' } ])
 
 tony = User.create([{
     :email => 'tony@email.com',
-    :encrypted_password => 'thisismypassword' } ])
+    :encrypted_password => '$2a$10$IXBQx7nCgZOsN6iQgCe/tuPM9Op7ivHxyXscKyNr0G02TAjyF994S' } ])
 
 wes = User.create([{
     :email => 'wes@email.com',
-    :encrypted_password => 'mypassword' } ])
+    :encrypted_password => '$2a$10$IXBQx7nCgZOsN6iQgCe/tuPM9Op7ivHxyXscKyNr0G02TAjyF994S' } ])
 
-walker = User.create([{
-    :email => 'walker@email.com',
-    :encrypted_password => 'mypassword' } ])
+bender = User.create([{
+    :email => 'bitemyshinymetalass@email.com',
+    :encrypted_password => '$2a$10$IXBQx7nCgZOsN6iQgCe/tuPM9Op7ivHxyXscKyNr0G02TAjyF994S' } ])
 
-titsmcgee = User.create([{
-    :email => 'tits@email.com',
-    :encrypted_password => 'mypassword' } ])
+homer = User.create([{
+    :email => 'doh@email.com',
+    :encrypted_password => '$2a$10$IXBQx7nCgZOsN6iQgCe/tuPM9Op7ivHxyXscKyNr0G02TAjyF994S' } ])
 
 
 # RESTAURANTS
@@ -50,28 +50,28 @@ ale_house = Restaurant.create([{
 
 spider_house = Restaurant.create([{
     :name => 'Spider House Cafe',
-    :address => '2906 Fruth St, Austin, TX 78705',
+    :address => '2906 Fruth Street',
     :vote => 60,
     :photo => "http://www.austinpsychfest.com/apfenfold/wp-content/uploads/2011/03/spiderhouse.jpg"
     } ])
 
 olivias = Restaurant.create([{
     :name => 'Olivias',
-    :address => '2043 S Lamar Blvd, Austin, TX 78704',
+    :address => '2043 South Lamar Blvd',
     :vote => 100,
     :photo => "http://olivia-austin.com/wp-content/uploads/2012/09/20120627_olivia-187.jpg"
      } ])
 
 rounders_pizza = Restaurant.create([{
     :name => 'Rounders Pizza',
-    :address => '1203 W 6th St, Austin, TX 78703',
+    :address => '1203 West 6th Street',
     :vote => 600,
     :photo => "http://austinafterfifty.com/wp-content/uploads/2013/09/Rounders-Pizza.jpg"
      } ])
 
 kerbey = Restaurant.create([{
     :name => 'Kerbey Lane',
-    :address => '3003 S Lamar Blvd',
+    :address => '3003 South Lamar Blvd',
     :vote => 20, 
     :photo => "http://leahchyma.com/wp-content/uploads/2013/01/kerbey-lane-cafe.jpg"
     } ])
@@ -87,15 +87,16 @@ ale01 = Review.create([{
     } ])
 
 shouse01 = Review.create([{
-    :critique => " Master cleanse cliche roof party, Pitchfork blog you probably haven't heard of them Neutra. Vice leggings plaid, cardigan meh disrupt actually Echo Park food truck farm-to-table Wes Anderson. "
+    :critique => "Master cleanse cliche roof party, Pitchfork blog you probably haven't heard of them Neutra. Vice leggings plaid, cardigan meh disrupt actually Echo Park food truck farm-to-table Wes Anderson. "
     } ])
+
 
 olivia01 = Review.create([{
     :critique => "Kitsch pop-up keffiyeh Williamsburg, artisan fanny pack master cleanse authentic fashion axe mixtape vinyl scenester. "
     } ])
 
 pizza01 = Review.create([{
-    :critique => "Raw denim pork belly Vice, swag Carles sustainable seitan farm-to-table 90's semiotics skateboard jean shorts next level. "
+    :critique => "I'm over it. "
     } ])
 
 kerby01 = Review.create([{
