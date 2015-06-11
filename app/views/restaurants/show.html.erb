@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+	<img src="<%= image_path(@restaurant.photo) %>" />
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @restaurant.name %>
 </p>
@@ -11,9 +15,10 @@
 </p>
 
 <p>
-  <strong>Vote:</strong>
-  <%= @restaurant.vote %>
+  <strong>Post/Review:</strong>
+  <%= @restaurant.post %>
 </p>
 
+
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+<%= link_to 'Back', root_path %>
