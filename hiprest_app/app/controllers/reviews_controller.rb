@@ -1,11 +1,12 @@
 class ReviewsController < ApplicationController
-  #before_action :authenticate_user!, :except => [:show, :index]
   before_action :set_review, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :except => [:show, :index]
 
   # GET /reviews
   # GET /reviews.json
   def index
     @reviews = Review.all
+    #@reviews = Review.where(restaurant_id: @restaurant.id).order("created_at DESC")
   end
 
   # GET /reviews/1
