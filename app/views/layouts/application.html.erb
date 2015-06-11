@@ -19,6 +19,7 @@
 			<li><%= link_to "HOME", root_path %></li>
 			<% if user_signed_in? %>
 				<li><%= link_to current_user.email %></li> 
+				<li><%= link_to "POST", new_restaurant_path %></li>
 				<li><%= link_to "LOGOUT", destroy_user_session_path, method: :delete %></li>
 			<% else %>
 				<li><%= link_to "SIGN UP", new_user_registration_path %></li>
