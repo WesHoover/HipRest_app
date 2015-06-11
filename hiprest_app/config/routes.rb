@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
-  get 'restaurants/index'
-  get 'restaurant/show' 
 
   devise_for :users, controllers: { sessions: "users/sessions" }
   # devise_for :users, path: "auth", path_names: { sign_in: 'login', sign_out: 'logout', password: 'secret', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: 'cmon_let_me_in' }
@@ -9,12 +6,13 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   # You can have the root of your site routed with "root"
 
-  get '/restaurants/:restaurant_id/reviews' => 'reviews#index'   #???
+  #get '/restaurants/:restaurant_id/reviews' => 'reviews#index'   #???
 
-  resources :restaurants do
-    resources :reviews
-    resource :user
-  end
+    resources :restaurants 
+    #resources :reviews
+    #resource :user
+
+
 
   root to: 'welcome#index'
   

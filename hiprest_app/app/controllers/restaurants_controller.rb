@@ -12,7 +12,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1.json
   def show
     @restaurant = Restaurant.find(params[:id])
-    @reviews = Review.where(restaurant_id: @restaurant.id).order("created_at DESC")
+    #@reviews = Review.where(restaurant_id: @restaurant.id).order("created_at DESC")
   end
 
   # GET /restaurants/new
