@@ -4,8 +4,9 @@
 	    <% if user_signed_in? %>
 	    	<a class="thumbnail" href="<%= restaurant_path(restaurant) %>"><%= restaurant.name %><img src="<%= restaurant.photo %>"></a>
 	    	<% else %>
-	        <a class="thumbnail" href="<%= user_session_path %>"><%= restaurant.name %><img src="<%= restaurant.photo %>"></a>
+	        <a class="thumbnail" href="<%= new_user_registration_path %>"><%= restaurant.name %><img src="<%= restaurant.photo %>"></a>
 	    <% end %>
 	</div>
 <% end %>
 
+<!-- user_session_path -->
