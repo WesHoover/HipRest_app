@@ -1,6 +1,8 @@
 # HipRest_app
 Restaurant reviews for Hipsters... you first?  
-  
+
+Links to Diagrams:  
+https://github.com/WesHoover/HipRest_app/blob/master/Diagrams/ERD01.jpg?raw=true
 
 APP LINK:  
 http://morning-plains-8421.herokuapp.com/  
@@ -9,7 +11,7 @@ TECH UTILIZED:
 Front End:  
 HTML5
 SCSS
-Bootstrap
+Bootstrap CSS
 
 Backend:  
 Ruby on Rails  
