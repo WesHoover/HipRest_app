@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   #get '/restaurants/:restaurant_id/reviews' => 'reviews#index'   #???
 
     resources :restaurants 
-    #resources :reviews
-    #resource :user
+    resources :restaurant
+    resources :reviews
+    resource :user
 
 
 
