@@ -9,10 +9,10 @@ http://morning-plains-8421.herokuapp.com/
 
 TECH UTILIZED:  
 Front End:  
-HTML5
-SCSS
-Bootstrap CSS
-
+HTML5  
+SCSS  
+Bootstrap CSS  
+  
 Backend:  
 Ruby on Rails  
 Devise  
